@@ -162,7 +162,7 @@ main {
   grid-template-columns: 50% 50%;
   grid-template-rows:  repeat(3, 500px);
   grid-column-gap: 0px;
-  grid-row-gap: -20px;
+  grid-row-gap: 0px;
 
 
 }
@@ -194,6 +194,7 @@ main {
 .grid-container:nth-child(3) {
   grid-column: 1;
   grid-row: 2;
+  width: 496px;
 }
 
 
@@ -324,12 +325,8 @@ section.team {
 .team-grid-container {
 
   display: flex;
-  /*flex: row wrap;*/
   flex: 1 1;
   justify-content: flex-end;
-  /*grid-template-columns: 60% 40%;
-  grid-row-gap: 20px;*/
-  /*position: relative;*/
 }
 
 section.team h2 {
@@ -367,10 +364,10 @@ section.team h2 {
   color: #003170;
   font-family: 'Prata';
   font-size: 32px;
-  /*align-self: flex-end;*/
+
 }
 
-.team-text p, ul {
+.team-text > p, .team-text > ul {
   margin-left: 380px;
   margin-bottom: 50px;
 }
