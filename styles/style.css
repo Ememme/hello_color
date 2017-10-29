@@ -386,6 +386,7 @@ section.contact h2 {
   width: 100vw;
   display: grid;
   grid-template-rows: 40% 30% 30%;
+  grid-row-gap: 10px;
   position: relative;
 }
 
@@ -409,9 +410,12 @@ section.contact > img {
 
 .contact-text {
   grid-column-start: 3;
-
+  margin-left: -150px;
 }
 
+.contact-text p:last-child {
+  font-weight: 600;
+}
 input::placeholder {
   color: #f59798;
 }
